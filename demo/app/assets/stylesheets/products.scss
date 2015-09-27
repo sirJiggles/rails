@@ -1,3 +1,29 @@
-// Place all the styles related to the Products controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.m-product-list {
+  table {
+    border-collapse: collapse;
+
+    tr,
+    td {
+      padding: 5px;
+      vertical-align: top;
+    }
+
+    tr {
+      &:nth-child(odd) {
+        background-color: #c6ecf9;
+      }
+    }
+  }
+
+  &-item {
+    &-image {
+      width: 60px;
+      height: 60px;
+    }
+    &-title {
+      font-size: 1.4em;
+      color: #666;
+    }
+  }
+
+}
