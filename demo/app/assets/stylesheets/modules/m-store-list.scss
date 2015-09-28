@@ -1,3 +1,5 @@
+@import './vars/index.scss';
+
 .m-store-list {
   list-style-type: none;
   margin: 20px 0;
@@ -6,7 +8,7 @@
   &-item {
     margin: 0;
     padding: 10px 0;
-    border-bottom: solid #dbdfdf 1px;
+    border-bottom: 1px solid $borderGrey;
 
     &:last-child {
       border-bottom: none;
@@ -32,11 +34,12 @@
 
     &-title {
       font-size: 1.4em;
-      color: #555;
+      line-height: 1.7em;
+      color: $titleColor;
     }
 
     &-descr {
-      color: #989898;
+      color: $bodyTextColor;
     }
 
   }

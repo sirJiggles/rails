@@ -1,3 +1,5 @@
+@import './vars/index.scss';
+
 .m-product-list {
   table {
     border-collapse: collapse;
@@ -22,7 +24,10 @@
     }
     &-title {
       font-size: 1.4em;
-      color: #666;
+      color: $titleColor;
+    }
+    &-descr {
+      color: $bodyTextColor;
     }
   }
 

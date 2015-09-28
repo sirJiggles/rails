@@ -7,8 +7,26 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <div class="m-site-banner">
+    <%= image_tag('data:image/jpeg;base64,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', class: 'm-site-banner-logo') %>
+    <h1 class="m-site-banner-title">
+      <%= @page_title || 'Pug store direct' %>
+    </h1>
+  </div>
+  <div class="m-main">
+    <aside class="m-main-nav">
+      <nav>
+        <ul class="m-site-navigation">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">One</a></li>
+          <li><a href="#">Two</a></li>
+          <li><a href="#">Three</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <section class="m-main-content">
+      <%= yield %>
+    </section>
+  </div>
 </body>
 </html>
