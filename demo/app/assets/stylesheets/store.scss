@@ -1,0 +1,44 @@
+.m-store-list {
+  list-style-type: none;
+  margin: 20px 0;
+  padding: 0;
+
+  &-item {
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: solid #dbdfdf 1px;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &-right {
+      display: inline-block;
+      vertical-align: top;
+      width: 58%;
+      padding: 0 0 0 2%;
+    }
+
+    &-image {
+      display: inline-block;
+      width: 30%;
+    }
+
+    &-title,
+    &-descr {
+      width: 100%;
+      margin: 0;
+    }
+
+    &-title {
+      font-size: 1.4em;
+      color: #555;
+    }
+
+    &-descr {
+      color: #989898;
+    }
+
+  }
+
+}

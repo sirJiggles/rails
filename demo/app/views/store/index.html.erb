@@ -1,0 +1,24 @@
+<% if notice %>
+  <p class="notice">
+    <%= notice %>
+  </p>
+<% end %>
+
+<h1>The products</h1>
+
+<ul class="m-store-list">
+  <% @products.each do |product| %>
+    <li class="m-store-list-item">
+      <article>
+        <%= image_tag(product.image_url, class: 'm-store-list-item-image') %>
+        <div class="m-store-list-item-right">
+          <h1 class="m-store-list-item-title"><%= product.title %></h1>
+          <div class="m-store-list-item-descr">
+            <%= sanitize(product.description) %>
+          </div>
+        </div>
+      </article>
+    </li>
+  <% end %>
+</ul>
+

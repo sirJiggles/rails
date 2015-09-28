@@ -36,7 +36,7 @@ class ProductTest < ActiveSupport::TestCase
       price: 20.00
     )
     assert product.invalid?
-    assert_equal [Il8n.translate('errors.messages.taken')], product.errors[:title]
+    assert_equal [I18n.translate('errors.messages.taken')], product.errors[:title]
   end
 
 end
