@@ -11,3 +11,9 @@ two:
   description: MyText
   image_url: MyString
   price: 9.99
+
+ruby:
+  title: Programing in ruby
+  description: This is an awesome book, you should try get your hands on
+  image_url: http://placepu.gs/220/220
+  price: 45.00
