@@ -8,6 +8,7 @@
   &-item {
     margin: 0;
     padding: 10px 0;
+    position: relative;
     border-bottom: 1px solid $borderGrey;
 
     &:last-child {
@@ -40,6 +41,11 @@
 
     &-descr {
       color: $bodyTextColor;
+    }
+
+    &-price {
+      position: absolute;
+      bottom: 15px;
     }
 
   }
